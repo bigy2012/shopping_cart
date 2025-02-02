@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Checkout - CHOCKD</title>
+        <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css"
+            rel="stylesheet">
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="./assets/checkout.css">
+    </head>
+    <body>
+        <div class="container my-5">
+            <h2 class="mb-4">Checkout</h2>
+            <a href="cart.html" class="continue-shopping">
+                <i class="fas fa-arrow-left me-2"></i>Back to cart
+            </a>
+            <div class="row mt-3">
+                <div class="col-lg-6">
+                    <div class="card p-3 mb-3">
+                        <h4>Order Summary</h4>
+                        <div id="cartItems"></div>
+                        <hr>
+                        <div class="d-flex justify-content-between">
+                            <span class="fw-bold">Total:</span>
+                            <span class="fw-bold" id="totalAmount">0 AED</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="card p-3">
+                        <h4>Billing Details</h4>
+                        <form id="checkoutForm">
+                            <div class="mb-3">
+                                <label class="form-label">Full Name</label>
+                                <input type="text" class="form-control"
+                                    id="fullName" required>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Email</label>
+                                <input type="email" class="form-control"
+                                    id="email" required>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Phone</label>
+                                <input type="text" class="form-control"
+                                    id="phone" required>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Shipping
+                                    Address</label>
+                                <textarea class="form-control" id="address"
+                                    rows="3" required></textarea>
+                            </div>
+
+                            <!-- ตัวเลือกการชำระเงิน -->
+                            <h4>Payment Method</h4>
+                            <div class="mb-3">
+                                <div class="form-check payment-option">
+                                    <input class="form-check-input" type="radio"
+                                        name="paymentMethod" value="credit_card"
+                                        required>
+                                    <label class="form-check-label">Credit
+                                        Card</label>
+                                </div>
+                                <div class="form-check payment-option">
+                                    <input class="form-check-input" type="radio"
+                                        name="paymentMethod" value="paypal">
+                                    <label
+                                        class="form-check-label">PayPal</label>
+                                </div>
+                                <div class="form-check payment-option">
+                                    <input class="form-check-input" type="radio"
+                                        name="paymentMethod" value="cod">
+                                    <label class="form-check-label">Cash on
+                                        Delivery</label>
+                                </div>
+                            </div>
+
+                            <button type="submit"
+                                class="btn btn-danger w-100">Confirm
+                                Order</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="./assets/checkout.js"></script>
+    </body>
+</html>

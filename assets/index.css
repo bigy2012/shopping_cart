@@ -1,0 +1,67 @@
+        /* Previous CSS remains the same */
+        :root {
+            --primary-color: #1a1a2e;
+            --accent-color: #dc3545;
+        }
+        
+        .navbar {
+            background-color: var(--primary-color);
+            padding: 1rem 0;
+        }
+        
+        .navbar-brand {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: white !important;
+        }
+        
+        .nav-link {
+            color: white !important;
+        }
+        
+        .search-box {
+            width: 100%;
+            max-width: 500px;
+        }
+        
+        .category-nav {
+            background-color: var(--primary-color);
+            padding: 0.5rem 0;
+        }
+        
+        .category-nav .nav-link {
+            color: white;
+            padding: 0.5rem 1rem;
+        }
+        
+        .product-card {
+            border: 1px solid #dee2e6;
+            padding: 1rem;
+            margin-bottom: 2rem;
+            transition: transform 0.3s;
+        }
+        
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        
+        .product-img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            margin-bottom: 1rem;
+        }
+        
+        .product-title {
+            font-size: 0.9rem;
+            margin-bottom: 0.5rem;
+            height: 2.4em;
+            overflow: hidden;
+        }
+        
+        .product-price {
+            color: var(--accent-color);
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
