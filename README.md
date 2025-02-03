@@ -1,4 +1,4 @@
-# Excample website : https://bigy2012.github.io/shopping_cart
+## Excample website : https://bigy2012.github.io/shopping_cart
 
 
 
